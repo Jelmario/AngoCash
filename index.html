@@ -1,0 +1,51 @@
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngoCash - MVP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <header>
+      <h1>AngoCash</h1>
+    </header>
+
+    <main>
+      <section id="login-section">
+        <h2>Login / Cadastro</h2>
+        <form id="login-form">
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Entrar / Cadastrar</button>
+        </form>
+        <p id="login-message"></p>
+      </section>
+
+      <section id="dashboard-section" style="display: none;">
+        <h2>Dashboard</h2>
+        <p>Bem-vindo(a), <span id="user-greeting"></span>!</p>
+        <p>Saldo: <span id="saldo">0.00</span> Kz</p>
+
+        <h3>Anúncios Disponíveis</h3>
+        <ul id="anuncios-list">
+          <!-- Anúncios serão inseridos aqui pelo JavaScript -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 AngoCash MVP</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
